@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="donate.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Education</a></li>
+                           <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+            <a href="index.html" class="block py-1 text-sm hover:text-green-600">Home</a>
+            <a href="education.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Education</a></li>
+        </div>
+    </div>
+</header>
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+             <div class="container mx-auto px-4 flex items-center gap-4">
+             <!-- Football image -->
+            <img src="img/Education/logo.jpeg" alt="Football Icon" class="w-20 h-20 rounded-tl-lg rounded-bl-lg" />
+
+            <div>
+            <h2 class="text-3xl font-bold">Education Initiatives</h2>
+            <p class="text-lg mt-2">Empowering Rohingya students through educational opportunities and resources</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Education Overview Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Educational Mission</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    At BRSU, we believe that education is the most powerful tool for empowerment and change. Despite the numerous barriers Rohingya students face in accessing quality education, we are committed to creating pathways to learning and academic excellence for our community.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Our educational initiatives focus on providing resources, mentorship, scholarship information, and advocacy to ensure that Rohingya students can pursue their educational dreams. We work to bridge gaps in formal education while creating informal learning opportunities that nurture critical thinking, leadership, and cultural identity.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Through partnerships with educational institutions, NGOs, and community organizations, we strive to expand educational access and create sustainable learning pathways for Rohingya youth at all levels—from primary education to university and beyond.
+                </p>
+            </div>
+        </section>
+
+        <!-- Educational Programs -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Educational Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-book text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Tutoring Support</h3>
+                    <img src="img/Education/tutoring.png" alt="Tutoring Icon" class="w-full h-92 object-cover">
+                    <p class="text-gray-700">
+                        Our volunteer tutors provide one-on-one and small group tutoring in core subjects including mathematics, science, languages, and social studies. Sessions are available both in-person at community centers and online to reach students in different locations.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-laptop text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Digital Literacy</h3>
+                    <img src="img/Education/Digital.png" alt="Tutoring Icon" class="w-full h-92 object-cover">
+                    <p class="text-gray-700">
+                        Our digital literacy program equips students with essential computer skills, internet research capabilities, and digital communication tools. We provide access to computers, basic software training, and guidance on using technology for educational advancement.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-language text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Language Programs</h3>
+                    <img src="img/Education/language.png" alt="Tutoring Icon" class="w-full h-92 object-cover">
+                    <p class="text-gray-700 text-justify">
+                        We offer English language courses at various proficiency levels to help students develop strong communication skills. Additionally, we provide Burmese, Bangla, and Rohingya mother-tongue literacy programs to preserve our cultural identity and support multilingual education.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-users text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Mentorship Program</h3>
+                    <img src="img/Education/Mentorship.jpg" alt="Tutoring Icon" class="w-full h-92 object-cover">
+                    <p class="text-gray-700">
+                        Our mentorship program connects Rohingya students with successful professionals and academics who provide guidance, support, and inspiration. Mentors help students navigate educational pathways, develop career goals, and build networks that support their academic journey.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-certificate text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Vocational Training</h3>
+                    <img src="img/Education/vocational.png" alt="Tutoring Icon" class="w-full h-92 object-cover">
+                    <p class="text-gray-700">
+                        We partner with technical institutes to provide vocational training in areas such as computer skills, tailoring, crafts, and other marketable skills. These programs are designed to create alternative educational pathways and economic opportunities for Rohingya youth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scholarships Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Scholarship Opportunities</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    BRSU is committed to helping Rohingya students access scholarship opportunities around the world. We provide information, application support, and preparation assistance for various scholarship programs.
+                </p>
+                
+                <h3 class="text-xl font-semibold mb-3 text-green-600">Current Scholarship Resources:</h3>
+                <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+                    <li>DAFI Scholarship Program for refugee students</li>
+                    <li>UNHCR Higher Education Scholarship Programme</li>
+                    <li>Asian University for Women Scholarships</li>
+                    <li>Mastercard Foundation Scholars Program</li>
+                    <li>HOPES (Higher and Further Education Opportunities and Perspectives for Syrians)</li>
+                    <li>Local university partnerships and tuition assistance programs</li>
+                </ul>
+                
+                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                    <h4 class="font-bold text-green-700 mb-2">Scholarship Application Support</h4>
+                    <p class="text-gray-700">
+                        Our team provides guidance on scholarship applications, including essay writing, interview preparation, and document collection. Contact our education coordinator for more information on upcoming scholarship deadlines and application workshops.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Educational Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Digital Library</h3>
+                    <p class="text-gray-700 mb-4">
+                        Our digital library contains e-books, academic journals, research papers, and educational videos across various subjects. Members can access these resources through our community centers or via our mobile app.
+                    </p>
+                    <a href="#" class="inline-block bg-green-600 text-white px-4 py-2 rounded font-medium hover:bg-green-700 transition duration-300">Access Digital Library</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Study Materials</h3>
+                    <p class="text-gray-700 mb-4">
+                        We provide textbooks, study guides, and learning materials for students at all levels. Our resource centers in Cox's Bazar and Kutupalong offer physical copies of educational materials that students can borrow.
+                    </p>
+                    <a href="#" class="inline-block bg-green-600 text-white px-4 py-2 rounded font-medium hover:bg-green-700 transition duration-300">View Available Materials</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+                <h3 class="text-xl font-bold mb-3 text-green-700">Online Learning Platforms</h3>
+                <p class="text-gray-700 mb-4">
+                    BRSU partners with several online learning platforms to provide free or discounted access to courses for our members. These platforms offer courses in various subjects, from basic literacy to advanced university-level content.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <div class="border border-gray-200 rounded p-4 text-center">
+                        <h4 class="font-bold text-green-700 mb-2">Coursera</h4>
+                        <p class="text-sm text-gray-600">University courses across disciplines</p>
+                    </div>
+                    <div class="border border-gray-200 rounded p-4 text-center">
+                        <h4 class="font-bold text-green-700 mb-2">Khan Academy</h4>
+                        <p class="text-sm text-gray-600">Free courses in math, science, and more</p>
+                    </div>
+                    <div class="border border-gray-200 rounded p-4 text-center">
+                        <h4 class="font-bold text-green-700 mb-2">edX</h4>
+                        <p class="text-sm text-gray-600">University-level courses and certificates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Student Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700">Samuda Begum.</h3>
+                            <p class="text-gray-600 mb-3 italic">"BRSU's mentorship program helped me secure a scholarship to study English Literature. I'm now in my second year and working on developing educational apps for refugee communities."</p>
+                            <p class="text-gray-700 text-sm">
+                                Samuda joined BRSU's programs in 2023 and is now studying at Cox'sbazar International University (CBIU) on a full scholarship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              <!-- ramjan ali -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700">Ramjan Ali.</h3>
+                            <p class="text-gray-600 mb-3 italic">"The Mentorship Program helped me graduate, and now I have the privilege of teaching and guiding other students."</p>
+                            <p class="text-gray-700 text-sm">
+                                Ramjan Ali completed BRSU's Mentorship program in 2023 and now works as both a teacher.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ziaul Hoq -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700"> JHJ.</h3>
+                            <p class="text-gray-600 mb-3 italic">" Getting a scholarship from BRSU has been a transformative milestone in my academic journey. It has alleviated financial burdens and enabled me to concentrate wholeheartedly on my educational pursuits. I am deeply honored to be a part of the BRSU community and sincerely grateful for the support extended to me. I hope my experience serves as a source of inspiration for others to pursue their aspirations with dedication and perseverance."</p>
+                            <p class="text-gray-700 text-sm">
+                                JHJ joined BRSU's programs in 2023 and is now studying at University on a full scholarship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arman -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700">AK.</h3>
+                            <p class="text-gray-600 mb-3 italic">"I am deeply grateful to BRSU.
+                                At a time when I was on the verge of discontinuing my studies due to financial hardship, BRSU stepped in and provided me with a scholarship. This support has been truly life-changing. Without it, I would not have been able to continue my education. This scholarship means a lot to me, and I sincerely thank BRSU for making it possible for me to pursue my studies.."</p>
+                            <p class="text-gray-700 text-sm">
+                                 AK joined BRSU's programs in 2023 and is now studying at University on a full scholarship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hubaib -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700"> MN</h3>
+                            <p class="text-gray-600 mb-3 italic">"TA Journey of Resilience: A Rohingya Student’s Story
+
+                    At the end of the day, all birds return to their nests, finding peace after a long day of pain and hardship. Yet, tragically, we the Rohingya are perhaps the only nation in the world that remains without a safe haven. Since 1942, we have endured continuous persecution, genocide, and ethnic cleansing at the hands of the Myanmar government. As a result, we have been displaced across various countries, forced to live without direction or security. In the pursuit of safety and freedom, many Rohingya risk their lives often taking perilous sea routes from one country to another. We are a community broken by trauma, simply trying to survive. Each day, countless dreams held by our children and youth are shattered like glass, fragile and irreparable.
+
+                    I am one such Rohingya youth a flickering light in the dark. I was born in the Kutupalong Refugee Camp, a place that feels more like a prison than a home. In this environment, access to food, healthcare, and basic human rights are very basic. Pursuing education in such conditions was nothing short of a dream. But despite overwhelming odds, I successfully completed my 12th grade.
+
+                    That marked the beginning of an even greater struggle how to move forward and pursue the dreams I had nurtured over twelve difficult years. Just when everything seemed uncertain, hope arrived in the form of the Bangladesh Rohingya Student Union (BRSU). Through the generous support and guidance of the respected President Mr. Nurul Hoque Rovvi, I was awarded a scholarship that helped me continue my education. Today, I am in my 6th semester (3rd year) at one of Bangladesh’s top-ranking private universities.
+
+                    With deep commitment to the betterment of my oppressed community, I strive to turn my dreams into meaningful action. I am sincerely grateful to BRSU for standing by me during this challenging journey. May the Almighty bless BRSU and enable them to continue their noble humanitarian work for the Rohingya people.    
+                    ."</p>
+                            <p class="text-gray-700 text-sm">
+                                MN joined BRSU's programs in 2023 and is now studying at University on a full scholarship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- zia -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-24 h-24 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-4xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700"> Rahman .</h3>
+                            <p class="text-gray-600 mb-3 italic">"A Ray of Hope: My Journey with BRSU-
+
+                In a world where dreams often fade under the weight of hardship, the Bangladesh Rohingya Student Union (BRSU) has become a beacon of light for many—myself included. As a determined student with aspirations far bigger than my circumstances, I often worried whether I’d be able to continue my university education. But when I received the scholarship from BRSU, everything changed.
+
+                That one opportunity was more than just financial support—it was a message: “We see your potential, and we believe in you.” It reignited my motivation, strengthened my resolve, and reminded me that I am not alone in this journey.
+
+                BRSU is not just an organization; it is a family that nurtures talent, uplifts spirits, and builds futures. I am deeply grateful for their support and proud to be a part of the vision they are creating—a future where education is a right, not a privilege.."</p>
+                            <p class="text-gray-700 text-sm">
+                                Rahman joined BRSU's programs in 2024 and is now studying at University on a full scholarship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section class="mb-12">
+            <div class="bg-green-50 p-8 rounded-lg shadow-md border border-green-200">
+                <h2 class="text-2xl font-bold mb-4 text-green-700 text-center">Get Involved in Our Educational Initiatives</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Volunteer as a Tutor</h3>
+                        <p class="text-gray-700 mb-4">
+                            Share your knowledge and skills by volunteering as a tutor in our educational programs.
+                        </p>
+                        <a href="donate.html" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Donate Educational Materials</h3>
+                        <p class="text-gray-700 mb-4">
+                            Contribute books, computers, or other educational resources to support our learning centers.
+                        </p>
+                        <a href="donate.html" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Sponsor a Student</h3>
+                        <p class="text-gray-700 mb-4">
+                            Help fund a student's education through our sponsorship program for tuition and supplies.
+                        </p>
+                        <a href="donate.html" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="inline-block bg-green-700 text-white px-8 py-3 rounded-full font-bold hover:bg-green-800 transition duration-300">Contact Us to Get Involved</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

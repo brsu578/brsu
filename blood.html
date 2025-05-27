@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Header -->
+<header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+  <div class="container mx-auto px-4 py-2 relative">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+             onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+        <div>
+          <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+          <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+          <li><a href="blood.html" class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Free-Blood Donation</a></li>
+          <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+        </ul>
+      </nav>
+
+       <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+      <a href="index.html" class="block py-1 text-sm hover:text-green-600">Home</a>
+      <a href="blood.html" class="block py-1 text-sm hover:text-green-600">Free-Blood Donation</a>
+      <a href="contact.html" class="block py-1 text-sm hover:text-green-600">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- Spacer -->
+<div class="h-[60px]"></div>
+
+<main>
+     <!-- Page Title -->
+  <div class="bg-green-600 text-white py-8">
+  <div class="container mx-auto px-4 flex items-center gap-4">
+    <!--  image -->
+    <img src="img/Blood-Donation/Blood-logo.jpeg" alt="Blood Icon" class="w-20 h-20 rounded-tl-lg rounded-bl-lg" />
+   <div>
+      <h2 class="text-3xl font-bold">Blood Donation Initiative</h2>
+      <p class="text-lg mt-2">Donate blood, save lives, and strengthen our community</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Emergency Blood Request Banner -->
+        <section class="mb-8">
+            <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded-md">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fa fa-exclamation-circle text-red-500 text-2xl mr-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-red-700">Need Blood Urgently?</h3>
+                        <p class="text-gray-700">Call our 24/7 Emergency Blood Helpline: <span class="font-bold">+880 1845-933042</span></p>
+                    </div>
+                    <div class="ml-auto">
+                        <a href="#emergency" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Request Blood</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blood Donation Overview Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Blood Donation Initiative</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    The BRSU Blood Donation Initiative was established in 2021 to address the critical shortage of blood supply in refugee camps and surrounding communities. Our program connects volunteer donors with patients in need, providing a lifeline during medical emergencies.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Through our network of student volunteers and partnerships with local hospitals and clinics, we organize regular blood donation drives, maintain a database of donors, and coordinate emergency blood requests. Our initiative has helped save hundreds of lives by ensuring timely access to safe blood for patients in critical condition.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    We believe that blood donation is not just a medical necessity but also a powerful act of community solidarity. By donating blood, our members demonstrate their commitment to supporting one another and building a stronger, more resilient community.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-red-50 p-4 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-tint text-red-600 text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-red-700 mb-2">500+</h3>
+                        <p class="text-gray-700">Registered blood donors</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-calendar text-red-600 text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-red-700 mb-2">24</h3>
+                        <p class="text-gray-700">Blood donation drives per year</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-heartbeat text-red-600 text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-red-700 mb-2">300+</h3>
+                        <p class="text-gray-700">Lives saved through donations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+    <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Why Donate Blood?</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- First Image Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-gray-300 flex items-center justify-center">
+                <img src="img/Blood-Donation/bloodDonation.jpeg" alt="Blood Donation" class="w-full h-[400px] object-cover">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-green-700">Save Lives</h3>
+                <p class="text-gray-700">
+                    A single blood donation can save up to three lives...
+                </p>
+                <ul class="list-disc pl-5 mt-3 text-gray-700 space-y-1">
+                    <li>Help accident victims with severe blood loss</li>
+                    <li>Support patients undergoing major surgeries</li>
+                    <li>Assist cancer patients receiving chemotherapy</li>
+                    <li>Aid women with complications during childbirth</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second Image Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="flex items-center justify-center mb-4">
+                <img src="img/Blood-Donation/bloodDonation1.jpeg" alt="Tutoring Icon" class="w-full h-[400px] object-cover rounded-t-lg">
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-green-700">Health Benefits for Donors</h3>
+                <p class="text-gray-700">
+                    Donating blood not only helps others but also offers several health benefits for donors...
+                </p>
+                <ul class="list-disc pl-5 mt-3 text-gray-700 space-y-1">
+                    <li>Free health screening (blood pressure, hemoglobin, etc.)</li>
+                    <li>Reduced risk of heart disease</li>
+                    <li>Stimulates blood cell production</li>
+                    <li>Burns calories and helps maintain iron levels</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+             
+            
+
+            <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                <h3 class="text-xl font-bold mb-3 text-green-700">Community Impact</h3>
+                <p class="text-gray-700 mb-4">
+                    Beyond the immediate medical benefits, our blood donation initiative strengthens community bonds and promotes a culture of mutual support and solidarity. By donating blood, you become part of a vital network that ensures our community can respond effectively to medical emergencies.
+                </p>
+                <div class="border-l-4 border-green-500 pl-4 italic text-gray-600">
+                    "When my sister needed an emergency blood transfusion after childbirth, BRSU's blood donor network helped us find a matching donor within minutes. This initiative doesn't just save lives—it gives our community hope and security during our most vulnerable moments." — Fatima, community member
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Blood Request -->
+        <section id="emergency" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Emergency Blood Request</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="md:flex">
+                    <div class="md:w-1/2 md:pr-6 mb-6 md:mb-0">
+                        <h3 class="text-xl font-bold mb-4 text-green-700">Need Blood Urgently?</h3>
+                        <p class="text-gray-700 mb-4">
+                            In case of medical emergencies requiring blood transfusion, our emergency response team works quickly to identify and contact suitable donors from our database.
+                        </p>
+                        <div class="bg-red-50 p-4 rounded-lg border border-red-200 mb-4">
+                            <h4 class="font-bold text-red-700 mb-2">Emergency Contact:</h4>
+                            <p class="text-gray-700 mb-1">24/7 Blood Helpline: <span class="font-bold">+880 1845-933042</span></p>
+                            <p class="text-gray-700">WhatsApp: <span class="font-bold">+880 1845-933042</span></p>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            For non-urgent inquiries or scheduled surgeries requiring blood, please fill out the request form at least 3-5 days in advance to ensure we have adequate time to arrange donors.
+                        </p>
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                            <h4 class="font-bold text-yellow-700 mb-2">What to Provide:</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>Patient's full name and age</li>
+                                <li>Blood type needed (if known)</li>
+                                <li>Number of units required</li>
+                                <li>Hospital/clinic name and location</li>
+                                <li>Doctor's name and contact (if available)</li>
+                                <li>Nature of emergency/reason for transfusion</li>
+                                <li>Contact person's name and phone number</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-6 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-6">
+                        <h3 class="text-xl font-bold mb-4 text-green-700">Blood Request Form</h3>
+                        <form action="#" method="post" class="space-y-4">
+                            <div>
+                                <label for="patientName" class="block text-sm font-medium text-gray-700 mb-1">Patient's Full Name</label>
+                                <input type="text" id="patientName" name="patientName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="patientAge" class="block text-sm font-medium text-gray-700 mb-1">Patient's Age</label>
+                                    <input type="number" id="patientAge" name="patientAge" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                                </div>
+                                <div>
+                                    <label for="bloodTypeNeeded" class="block text-sm font-medium text-gray-700 mb-1">Blood Type Needed</label>
+                                    <select id="bloodTypeNeeded" name="bloodTypeNeeded" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                                        <option value="">Select Blood Type</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="unitsNeeded" class="block text-sm font-medium text-gray-700 mb-1">Number of Units Needed</label>
+                                <input type="number" id="unitsNeeded" name="unitsNeeded" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="hospital" class="block text-sm font-medium text-gray-700 mb-1">Hospital/Clinic Name and Location</label>
+                                <input type="text" id="hospital" name="hospital" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="reason" class="block text-sm font-medium text-gray-700 mb-1">Reason for Blood Requirement</label>
+                                <textarea id="reason" name="reason" rows="2" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <div>
+                                <label for="contactName" class="block text-sm font-medium text-gray-700 mb-1">Contact Person's Name</label>
+                                <input type="text" id="contactName" name="contactName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block text-sm font-medium text-gray-700 mb-1">Contact Phone Number</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="urgency" class="block text-sm font-medium text-gray-700 mb-1">Urgency Level</label>
+                                <select id="urgency" name="urgency" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="emergency">Emergency (Needed immediately)</option>
+                                    <option value="urgent">Urgent (Needed within 24 hours)</option>
+                                    <option value="scheduled">Scheduled (Needed for planned procedure)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-red-600 text-white py-2 px-4 rounded-md font-medium hover:bg-red-700 transition duration-300">Submit Blood Request</button>
+                            </div>
+                        </form>
+                           <!-- Blood Request Success Modal -->
+<div id="bloodSuccess" class="hidden fixed inset-0 flex items-center justify-center z-50 bg-opacity-50">
+  <div class="bg-white text-green-700 p-6 rounded-lg shadow-xl text-center w-[90%] max-w-xl">
+    <h2 class="text-2xl font-bold mb-2">✅ Request Submitted!</h2>
+    <p class="mb-4 leading-relaxed">
+      Your blood request has been received. Our team will reach out to you as soon as possible.<br>
+      For urgent communication, please call or WhatsApp us at <strong class="text-green-800">+880 1845-933042</strong>.
+    </p>
+    <button id="closeBloodSuccess" class="mt-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Close</button>
+  </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Lives Saved Through Donation</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-2xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700">A Mother's Life Saved</h3>
+                            <p class="text-gray-700 mb-3">
+                                When Amina experienced severe postpartum hemorrhage after giving birth, she urgently needed blood transfusions. Through our emergency response system, three donors were quickly mobilized, and their donations helped save both Amina and her newborn daughter.
+                            </p>
+                            <p class="text-gray-600 italic">
+                                "I wouldn't be alive today without the blood donors who came forward. My daughter and I are forever grateful to BRSU's blood donation network." — Amina
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                            <span class="text-gray-600 text-2xl">👤</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-green-700">Emergency Surgery Success</h3>
+                            <p class="text-gray-700 mb-3">
+                                When 12-year-old Kamal needed emergency surgery after an accident, his rare blood type made finding donors challenging. BRSU's database quickly identified matching donors, and within hours, the necessary units were collected, allowing doctors to perform the life-saving procedure.
+                            </p>
+                            <p class="text-gray-600 italic">
+                                "The speed at which BRSU found donors for my son was incredible. Their organization saved precious time when every minute counted." — Kamal's father
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                <h3 class="text-xl font-bold mb-4 text-green-700 text-center">Our Impact in Numbers</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">1,200+</div>
+                        <p class="text-gray-700">Units of blood collected</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">350+</div>
+                        <p class="text-gray-700">Emergency requests fulfilled</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">24</div>
+                        <p class="text-gray-700">Blood donation drives</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">8</div>
+                        <p class="text-gray-700">Partner medical facilities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Volunteer Opportunities -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Volunteer With Our Blood Donation Initiative</h2>
+            
+            <div class="bg-green-50 p-8 rounded-lg shadow-md border border-green-200">
+                <p class="text-gray-700 mb-6 text-center">
+                    Beyond donating blood, there are many ways to support our blood donation initiative. Volunteers play a crucial role in organizing drives, raising awareness, and ensuring the program's success.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Donor Recruitment</h3>
+                        <p class="text-gray-700 mb-4">
+                            Help recruit new blood donors through community outreach, awareness campaigns, and personal networks.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-gray-600 mb-4">
+                            <li>Distribute informational materials</li>
+                            <li>Organize awareness sessions</li>
+                            <li>Assist with donor registration</li>
+                        </ul>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Event Support</h3>
+                        <p class="text-gray-700 mb-4">
+                            Assist during blood donation drives by helping with registration, donor refreshments, and logistics.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-gray-600 mb-4">
+                            <li>Manage donor check-in</li>
+                            <li>Prepare and serve refreshments</li>
+                            <li>Monitor donors post-donation</li>
+                        </ul>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold mb-2 text-green-700">Emergency Response</h3>
+                        <p class="text-gray-700 mb-4">
+                            Join our emergency response team that coordinates urgent blood requests and donor mobilization.
+                        </p>
+                        <ul class="list-disc pl-5 text-sm text-gray-600 mb-4">
+                            <li>Help manage the emergency hotline</li>
+                            <li>Coordinate donor-patient matching</li>
+                            <li>Assist with transportation logistics</li>
+                        </ul>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="inline-block bg-green-700 text-white px-8 py-3 rounded-full font-bold hover:bg-green-800 transition duration-300">Volunteer Application</a>
+                </div>
+            </div>
+        </section>
+</main>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const bloodForm = document.querySelector('#emergency form');
+    const bloodModal = document.getElementById('bloodSuccess');
+    const closeBloodBtn = document.getElementById('closeBloodSuccess');
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Blood Request Form Handling
+    if (bloodForm && bloodModal && closeBloodBtn) {
+        bloodForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            bloodModal.classList.remove('hidden');
+            bloodForm.reset();
+
+            // Auto-close modal after 5 seconds
+            setTimeout(() => {
+                bloodModal.classList.add('hidden');
+            }, 5000);
+        });
+
+        closeBloodBtn.addEventListener('click', function () {
+            bloodModal.classList.add('hidden');
+        });
+
+        bloodModal.addEventListener('click', function (e) {
+            if (e.target === bloodModal) {
+                bloodModal.classList.add('hidden');
+            }
+        });
+    }
+
+    // Mobile Menu Toggle
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+});
+   </script>
+
+</body>
+</html>

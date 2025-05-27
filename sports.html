@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+               <!-- Logo -->
+               <div class="flex items-center">
+                 <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="sports.html"
+                     class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Sports</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+            <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="sports.html"
+                     class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Sports</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+        </div>
+    </div>
+</header>
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+
+    <!-- Page Title -->
+  <div class="bg-green-600 text-white py-8">
+  <div class="container mx-auto px-4 flex items-center gap-4">
+    <!-- Football image -->
+    <img src="img/Sports/sports-logo.png" alt="Football Icon" class="w-20 h-20 rounded-tl-lg rounded-bl-lg" />
+
+    <div>
+      <h2 class="text-3xl font-bold">Sports Programs</h2>
+      <p class="text-lg mt-2">Building community, health, and leadership through sports and recreation</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Sports Overview Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Sports Initiative</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    At BRSU, we believe that sports and recreational activities play a vital role in promoting physical health, mental well-being, and community cohesion. Our sports programs provide Rohingya youth with opportunities to develop teamwork, leadership, and resilience while enjoying the universal language of play.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Through organized teams, regular training sessions, friendly matches, and tournaments, we create spaces where young people can exercise, socialize, and develop their talents. Our sports initiatives also serve as platforms for cultural exchange, conflict resolution, and community building.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    BRSU's sports programs are inclusive and accessible to all, regardless of skill level or prior experience. We particularly encourage the participation of girls and young women, who often have limited access to sports and recreational activities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Major Sports Sections -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Sports Programs</h2>
+            
+ <!-- Football Section -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+    <div class="md:flex">
+        <!-- Image Section -->
+        <div class="md:w-1/3">
+            <div class="h-64 md:h-full bg-gray-300">
+                <img src="img/Sports/football.jpg" alt="Football Team" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Text Content Section -->
+        <div class="md:w-2/3 p-6">
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <i class="fa fa-futbol-o text-green-700 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-green-700">Football</h3>
+            </div>
+
+            <p class="text-gray-700 mb-4 text-justify">
+                Football is our most popular sport, with multiple teams across different age groups. Our football program includes regular training sessions, friendly matches with local teams, and participation in regional tournaments. The program focuses on developing technical skills, tactical understanding, teamwork, and sportsmanship.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h4 class="font-bold text-green-700 mb-1">Teams</h4>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                        <li>BRSU United (Senior Team, 18+)</li>
+                        <li>BRSU Youth (15–17 years)</li>
+                        <li>BRSU Juniors (12–14 years)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Cricket Section -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <div class="h-64 bg-gray-300 flex items-center justify-center">
+                            <img src="img/Sports/cricket.jpg" alt="Football Team" class="w-full h-full object-cover">
+                            
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-trophy text-green-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-green-700">Cricket</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Our cricket program has grown significantly in recent years, reflecting the sport's popularity in Bangladesh. We offer training in batting, bowling, and fielding techniques, as well as opportunities to participate in matches and tournaments. The program emphasizes both individual skill development and team strategy.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <h4 class="font-bold text-green-700 mb-1">Teams</h4>
+                                <ul class="list-disc pl-5 text-gray-700 text-sm">
+                                    <li>BRSU Strikers (Senior Team)</li>
+                                    <li>BRSU Rising Stars (Junior Team)</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Volleyball Section -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <div class="h-64 bg-gray-300 flex items-center justify-center">
+                            <img src="img/Sports/vollyboll.jpg" alt="Football Team" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-volleyball-ball text-green-700 text-xl">🏐</i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-green-700">Volleyball</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Volleyball is a popular team sport in our community that requires minimal equipment and can be played in limited spaces. Our volleyball program teaches fundamental skills such as serving, passing, setting, and spiking, while promoting teamwork and communication. We have both competitive teams and recreational play options.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <h4 class="font-bold text-green-700 mb-1">Teams</h4>
+                                <ul class="list-disc pl-5 text-gray-700 text-sm">
+                                    <li>BRSU Spikers (Mixed Team)</li>
+                                    <li>BRSU Women's Volleyball Team</li>
+                                </ul>
+                            </div>
+                            
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Indoor Games Section -->
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Indoor Games</h2>
+
+            <!-- Female Indoor-->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <div class="h-64 bg-gray-300 flex items-center justify-center">
+                            <img src="img/Sports/Female.jpeg" alt="Female Indoor game" class="w-full h-full object-cover">
+                            
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-trophy text-green-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-green-700">Indoor Ball Passing Program (Female)</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Our indoor ball passing program for girls and young women is growing steadily, highlighting the enthusiasm for team-based indoor games within our community. The program focuses on developing agility, coordination, and accurate passing skills through structured training sessions and friendly competitions. Alongside physical development, it encourages teamwork, communication, and leadership in a fun and inclusive environment. This initiative plays an important role in empowering female participants through active sports engagement.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <h4 class="font-bold text-green-700 mb-1">Teams</h4>
+                                <ul class="list-disc pl-5 text-gray-700 text-sm">
+                                    <li>BRSU Storm Sisters (Senior Team)</li>
+                                    <li>BRSU Velocity Queens (Junior Team)</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-gray-700 mb-6 text-center">
+                    Our indoor games program offers recreational and competitive opportunities in traditional board and table games that are popular in our community. These games promote strategic thinking, concentration, patience, and friendly competition.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Carrom -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-green-700 text-xl font-bold">♟️</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Carrom</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            A popular table game similar to billiards, played by striking small discs into pockets at the corners of the board.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700">
+                            <p class="font-bold mb-1">Activities:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Weekly tournaments</li>
+                                <li>Training for beginners</li>
+                                <li>Inter-camp competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Chess -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-green-700 text-xl font-bold">♞</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Chess</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            A classic strategy board game that develops critical thinking, planning, and decision-making skills.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700">
+                            <p class="font-bold mb-1">Activities:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Chess club meetings</li>
+                                <li>Strategy workshops</li>
+                                <li>Monthly tournaments</li>
+                                <li>Online chess competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ludo -->
+                    <div class="border border-gray-200 rounded-lg p-5">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="text-green-700 text-xl font-bold">🎲</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Ludo</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            A traditional board game of strategy, chance, and competition that is accessible to players of all ages.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded text-sm text-gray-700">
+                            <p class="font-bold mb-1">Activities:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Family game nights</li>
+                                <li>Ludo tournaments</li>
+                                <li>Inter-generational competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tournaments and Competitions -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Tournaments & Competitions</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-bold mb-4 text-green-700">Upcoming Tournaments</h3>
+                
+                <div class="space-y-6">
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">BRSU Football Cup 2025</h4>
+                        <p class="text-gray-700 mb-2">
+                            Our annual football tournament featuring teams from different camps and local communities. The tournament includes men's, women's, and youth divisions.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fa fa-calendar mr-2"></i>
+                            <span>August 10-20, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">Inter-Camp Cricket Tournament</h4>
+                        <p class="text-gray-700 mb-2">
+                            A cricket tournament bringing together teams from different refugee camps to compete in a series of T20 matches.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fa fa-calendar mr-2"></i>
+                            <span>September 5-15, 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">BRSU Indoor Games Championship</h4>
+                        <p class="text-gray-700 mb-2">
+                            A multi-day event featuring competitions in carrom, chess, and ludo with individual and team categories.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fa fa-calendar mr-2"></i>
+                            <span>July 25-26, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-green-700">Past Tournament Highlights</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="h-60 bg-gray-300 rounded mb-3 flex items-center justify-center">
+                            <img src="img/Sports/football-cup.jpg" alt="Football Team" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-green-700 mb-1">2024 BRSU Football Cup</h4>
+                        <p class="text-sm text-gray-700">
+                            A football tournament was organized in 2024, engaging Rohingya youth to promote teamwork, leadership, and community spirit through sports.
+
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div class="h-60 bg-gray-300 rounded mb-3 flex items-center justify-center">
+                            <img src="img/Sports/vollyball-cup.jpg" alt="Volleyball" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-green-700 mb-1">2024 Volleyball Championship</h4>
+                        <p class="text-sm text-gray-700">
+                            A Volleyball tournament was organized in 2024, engaging Rohingya youth to promote teamwork, leadership, and community spirit through sports.
+
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                    <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">View Tournament Archive</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Facilities -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Sports Facilities</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-60 bg-gray-300 flex items-center justify-center">
+                        <img src="img/Sports/filed.jpg" alt="Filed" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">Main Football Field</h3>
+                        <p class="text-gray-700 mb-3">
+                            Our main football field is located in Block B of Kutupalong camp. The field features marked boundaries, goals, and a level playing surface maintained by our volunteer grounds team.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-1">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span>Block B, Kutupalong Camp</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fa fa-clock-o mr-2"></i>
+                            <span>Open daily from 7 AM to 6 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-60 bg-gray-300 flex items-center justify-center">
+                        <img src="img/Sports/Center.jpeg" alt="Filed" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">BRSU Recreation Center</h3>
+                        <p class="text-gray-700 mb-3">
+                            Our indoor recreation center houses facilities for volleyball, carrom, chess, ludo, and other indoor activities. The center provides a safe space for sports and games during monsoon season and extreme weather.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-1">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span>BRSU Community Center, Block B</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fa fa-clock-o mr-2"></i>
+                            <span>Open daily from 9 AM to 8 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        </main>
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program ETC</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>      
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

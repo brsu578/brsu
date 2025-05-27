@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="donate.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Donate</a></li>
+                           <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+            <a href="index.html" class="block py-1 text-sm hover:text-green-600">Home</a>
+            <a href="donate.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Donate</a></li>
+        </div>
+    </div>
+</header>
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">Support Our Mission</h2>
+            <p class="text-lg mt-2">Your donation helps Rohingya students access education and resources</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Donation Information -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Why Donate to BRSU?</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Your generous donation to the Bangladesh Rohingya Student Union (BRSU) directly supports educational 
+                    opportunities for Rohingya students. We use donations to provide scholarships, educational materials, 
+                    mentorship programs, and community events that empower the next generation of Rohingya leaders.
+                </p>
+                
+                <h3 class="text-xl font-bold mb-3 text-green-700">Your Donation Supports:</h3>
+                <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+                    <li>Scholarships for promising students</li>
+                    <li>Educational resources and study materials</li>
+                    <li>Community workshops and skill development programs</li>
+                    <li>Cultural preservation initiatives</li>
+                    <li>Advocacy for educational rights</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Donation Options -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Ways to Donate</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- One-time Donation -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">One-time Donation</h3>
+                    <p class="text-gray-700 mb-4">Make a single contribution to support our programs and initiatives.</p>
+                    
+                    <!-- <a href="" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Donate Now</a> -->
+                </div>
+                
+                <!-- Monthly Giving -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Monthly Giving</h3>
+                    <p class="text-gray-700 mb-4">Become a sustaining supporter with a recurring monthly donation.</p>
+                    
+                    <!-- <a href="" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Become a Supporter</a> -->
+                </div>
+                
+                <!-- Sponsor a Student -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Sponsor a Student</h3>
+                    <p class="text-gray-700 mb-4">Directly support a Rohingya student's educational journey.</p>
+                    <p class="text-gray-700 mb-4">Your sponsorship covers tuition, books, and educational supplies for one student.</p>
+                    <!-- <a href="" class="inline-block bg-green-600 text-white px-4 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Sponsor Now</a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- bKash / Nagad/ Bank-->
+<!-- Donation Options Trigger -->
+<div class="max-w-xl mx-auto bg-white p-6 rounded shadow text-center">
+    <h1 class="text-2xl font-bold text-green-700 mb-4">Support BRSU with Your Donation</h1>
+    <p class="mb-6 text-gray-700">Choose your preferred method below</p>
+    <button id="donationBtn" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">
+        Donate Now
+    </button>
+</div>
+
+<!-- Multi-option Donation Modal -->
+<div id="donationModal" class="hidden fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+    <div class="bg-white p-6 rounded-lg shadow-xl text-center w-[90%] max-w-3xl">
+        <h2 class="text-2xl font-bold text-green-700 mb-6">Donation Methods</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <!-- bKash Section -->
+            <div class="border p-4 rounded-lg shadow">
+                <h3 class="text-pink-600 font-bold text-lg mb-2">bKash</h3>
+                <p class="text-gray-700">📱 Number:</p>
+                <p class="text-red-600 text-xl font-bold mb-2" id="bkashNumber">017XXXXXXXX</p>
+                <button onclick="copyToClipboard('bkashNumber')" class="text-sm mb-2 px-3 py-1 bg-pink-500 text-white rounded hover:bg-pink-600">Copy</button>
+                <p class="text-gray-600 text-sm">Reference: <strong>Donation</strong></p>
+            </div>
+
+            <!-- Nagad Section -->
+            <div class="border p-4 rounded-lg shadow">
+                <h3 class="text-yellow-500 font-bold text-lg mb-2">Nagad</h3>
+                <p class="text-gray-700">📱 Number:</p>
+                <p class="text-red-600 text-xl font-bold mb-2" id="nagadNumber">018XXXXXXXX</p>
+                <button onclick="copyToClipboard('nagadNumber')" class="text-sm mb-2 px-3 py-1 bg-yellow-500 text-white rounded hover:bg-yellow-600">Copy</button>
+                <p class="text-gray-600 text-sm">Reference: <strong>Donation</strong></p>
+            </div>
+
+            <!-- Bank Account Section -->
+            <div class="border p-4 rounded-lg shadow">
+                <h3 class="text-blue-600 font-bold text-lg mb-2">Bank Transfer</h3>
+                <p class="text-gray-700">🏦 Account Name:</p>
+                <p class="text-gray-900 font-medium">BRSU Foundation</p>
+                <p class="text-gray-700">💳 Account Number:</p>
+                <p class="text-red-600 text-xl font-bold mb-2" id="bankAccount">123456789012</p>
+                <p class="text-gray-700">🏦 Bank Name: Islami Bank</p>
+                <p class="text-gray-700">🏢 Branch: KRC</p>
+                <button onclick="copyToClipboard('bankAccount')" class="text-sm mt-2 px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">Copy</button>
+            </div>
+        </div>
+
+        <p class="text-sm text-red-500 mt-6">After sending, please WhatsApp or email us your transaction ID with your name.</p>
+        <button id="closeDonationModal" class="mt-4 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Close</button>
+    </div>
+</div>
+
+        
+        
+        <!-- Impact Stories -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-green-800">Your Impact</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Samuda's Story</h3>
+                    <p class="text-gray-700 mb-4">
+                        "Thanks to a scholarship from BRSU, I was able to continue my education at Cox'sbazar International University(CBIU) in Bangladesh. 
+                        I'm now studying International Relations and hope to work with humanitarian organizations to 
+                        support refugee communities. This opportunity has changed my life."
+                    </p>
+                    <p class="text-gray-600 italic">- Samuda, Scholarship Recipient</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Our Impact in Numbers</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center py-4">
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">100+</p>
+                            <p class="text-gray-700">Students Supported</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">15</p>
+                            <p class="text-gray-700">Scholarships Awarded</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-green-700">12</p>
+                            <p class="text-gray-700">Community Programs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+<script>
+    document.getElementById('donationBtn').onclick = () => {
+        document.getElementById('donationModal').classList.remove('hidden');
+    };
+    document.getElementById('closeDonationModal').onclick = () => {
+        document.getElementById('donationModal').classList.add('hidden');
+    };
+    function copyToClipboard(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Copied to clipboard!');
+        });
+    }
+</script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const donationForm = document.getElementById('donationForm');
+    const paymentModal = document.getElementById('paymentModal');
+    const closePaymentBtn = document.getElementById('closePaymentModal');
+
+    if (donationForm && paymentModal && closePaymentBtn) {
+        donationForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent actual submission
+            paymentModal.classList.remove('hidden'); // Show modal
+        });
+
+        closePaymentBtn.addEventListener('click', function () {
+            paymentModal.classList.add('hidden');
+        });
+
+        // Optional: click outside modal to close
+        paymentModal.addEventListener('click', function (e) {
+            if (e.target === paymentModal) {
+                paymentModal.classList.add('hidden');
+            }
+        });
+    }
+
+     const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+
+
+</script>
+
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

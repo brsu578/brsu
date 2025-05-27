@@ -1,0 +1,556 @@
+/* Custom styles for BRSU website */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional hover effects for buttons */
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* Custom focus styles */
+*:focus {
+  outline: 2px solid #16a364;
+  outline-offset: 2px;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Custom animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slider styles */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slider-navigation button {
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-indicators {
+  z-index: 10;
+}
+
+.slider-indicator {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-indicator.active {
+  background-color: white;
+  background-opacity: 1;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* Twitter */
+.fa-whatsapp {
+  background: #55ACEE;
+  color: white;
+}
+.fa-telegram {
+  background: #125688;
+  color: white;
+}
+.mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+
+  .dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Add these styles to ensure the mobile menu transitions properly */
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+  display: none;
+}
+
+#mobile-menu.translate-x-0 {
+  transform: translateX(0);
+}
+
+#mobile-menu.translate-x-full {
+  transform: translateX(100%);
+}
+
+/* News */
+.news-ticker {
+            background: linear-gradient(90deg, #14c0de, #1c92b9);
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .news-ticker-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            animation: scroll-left 50s linear infinite;
+            /* Start completely off-screen to the right */
+            transform: translateX(100vw);
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100vw);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .news-ticker:hover .news-ticker-wrapper {
+            animation-play-state: paused;
+        }
+        
+        .news-item {
+            color: white;
+            font-weight: 500;
+            margin-right: 100px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        
+        .news-item::before {
+            content: "🔴";
+            margin-right: 8px;
+            font-size: 12px;
+        }
+        
+    .breaking-label {
+    background: #ffffff;
+    color: #2d2b2b;
+    padding: 6px 2px;
+    font-weight: bold;
+    font-size: 9px;         /* Smaller font size */
+    margin-right: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+}
+        
+        /* Alternative approach with delay */
+        .news-ticker-delayed {
+            animation-delay: 2s;
+        }
+
+        .hamburger {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #f4f4f4;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .mobile-menu a:hover {
+      background: #ddd;
+    }
+
+    @media (min-width: 768px) {
+      .hamburger {
+        display: none;
+      }
+
+      .desktop-nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .mobile-menu {
+        display: none;
+      }
+    }
+
+    /* Female */
+    /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2d8f47;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        /* Focus Areas Grid */
+        .focus-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .focus-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #2d8f47;
+        }
+
+        .focus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .focus-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #2d8f47;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .focus-card h3 {
+            font-size: 1.5rem;
+            color: #2d8f47;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .focus-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin: 80px 0;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            color: #2d8f47;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            background-color: #2d8f47;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: #2d8f47;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            padding: 15px 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: #2d8f47;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .focus-areas {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        .get-news-section {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .get-news-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+        
+        .news-badge {
+            background: linear-gradient(45deg, #ef4444, #dc2626);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+            }
+            50% { 
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(239, 68, 68, 0.6);
+            }
+        }
+        
+        .news-text {
+            animation: slide-in 1s ease-out;
+        }
+        
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .news-icon {
+            animation: bounce-subtle 2s infinite;
+        }
+        
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livelihood Activities - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="female.html"
+                     class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">We Work for Women</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="female.html"
+                     class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">We Work for Women</a>
+                    </li>
+                    </li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+        </div>
+    </div>
+</header>
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold"><a href="female.html" class="block px- py-2">We Work for Women</a></h2>
+            <p class="text-lg mt-2">We stand with women—through every challenge and every step forward.
+            Empowering women through education, skills, and support..</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2 class="section-title">Our Focus Areas</h2>
+        
+        <div id="focus-areas" class="focus-areas">
+            <div class="focus-card">
+                <div class="focus-icon">📚</div>
+                <h3>Education Support</h3>
+                <p>We provide educational opportunities, literacy programs, and academic support to ensure Rohingya women and girls have access to quality education. Our programs include basic literacy, vocational training, and higher education scholarships.</p>
+            </div>
+
+            <div class="focus-card">
+                <div class="focus-icon">🏥</div>
+                <h3>Health & Hygiene</h3>
+                <p>Comprehensive healthcare services including maternal health, reproductive health education, mental health support, and hygiene awareness programs. We work to ensure women have access to essential healthcare services and health education.</p>
+            </div>
+
+            <div class="focus-card">
+                <div class="focus-icon">💼</div>
+                <h3>Livelihood & Skill Training</h3>
+                <p>Practical skills training programs that enable women to generate income and achieve economic independence. Our programs include tailoring, handicrafts, small business development, and financial literacy training.</p>
+            </div>
+
+            <div class="focus-card">
+                <div class="focus-icon">⚖️</div>
+                <h3>Gender-Based Advocacy</h3>
+                <p>We advocate for women's rights, gender equality, and protection from gender-based violence. Our advocacy efforts focus on policy change, community awareness, and creating safe spaces for women to voice their concerns.</p>
+            </div>
+
+            <div class="focus-card">
+                <div class="focus-icon">👑</div>
+                <h3>Leadership & Empowerment</h3>
+                <p>Leadership development programs that build confidence, decision-making skills, and community engagement. We train women to become leaders in their communities and advocates for positive change.</p>
+            </div>
+
+            <div class="focus-card">
+                <div class="focus-icon">👶</div>
+                <h3>Support for Mothers & Young Girls</h3>
+                <p>Specialized programs for mothers and young girls including parenting support, child development education, mentorship programs, and protection services to ensure the safety and well-being of the most vulnerable.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

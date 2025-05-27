@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="advocacy.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">Advocacy</a></li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+            <a href="index.html" class="block py-1 text-sm hover:text-green-600">Home</a>
+            <a href="about.html" class="block py-1 text-sm hover:text-green-600">About</a>
+            <a href="contact.html" class="block py-1 text-sm hover:text-green-600">Contact</a>
+        </div>
+    </div>
+</header>
+
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">Advocacy</h2>
+            <p class="text-lg mt-2">Amplifying Rohingya voices and advocating for justice, rights, and dignity</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Advocacy Overview Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Advocacy Mission</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    BRSU's advocacy work is rooted in the belief that Rohingya youth must have a voice in decisions that affect their lives and future. We work to amplify Rohingya perspectives, challenge systemic discrimination, and advocate for policies that uphold our community's rights to education, citizenship, justice, and dignified return to our homeland.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Our advocacy is led by Rohingya students and youth who bring lived experience and authentic perspectives to policy discussions. We engage with local and international stakeholders, including governments, UN agencies, human rights organizations, and civil society groups to advance the rights and well-being of the Rohingya community.
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Through research, public education, media engagement, and direct advocacy, we work to ensure that Rohingya voices are heard and that our community's needs and aspirations are reflected in policies and programs that affect us.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Advocacy Areas -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Key Advocacy Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-graduation-cap text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Education Rights</h3>
+                    <p class="text-gray-700">
+                        We advocate for expanded access to quality education for Rohingya at all levels, from primary to higher education. This includes advocating for the recognition of Rohingya students' educational credentials, access to formal education in host countries, and scholarship opportunities.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-balance-scale text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Justice & Accountability</h3>
+                    <p class="text-gray-700">
+                        We support international justice mechanisms seeking accountability for crimes committed against the Rohingya. We document human rights violations, collect testimonies, and engage with legal processes to ensure justice for our community.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-id-card text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Citizenship & Identity</h3>
+                    <p class="text-gray-700">
+                        We advocate for the restoration of Rohingya citizenship in Myanmar and recognition of our identity and cultural rights. We challenge narratives that deny our existence and history as an indigenous ethnic group of Myanmar.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-home text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Safe & Dignified Return</h3>
+                    <p class="text-gray-700">
+                        We advocate for conditions that would enable the safe, voluntary, and dignified return of Rohingya refugees to their homeland in Myanmar, including guarantees of citizenship, security, and human rights protections.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa fa-users text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700 text-center">Youth Participation</h3>
+                    <p class="text-gray-700">
+                        We advocate for meaningful inclusion of Rohingya youth in decision-making processes that affect our community. We work to ensure that young people's perspectives are represented in policy discussions, humanitarian response planning, and peace processes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy Recommendations -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Policy Recommendations</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Based on extensive consultation with our community and research on best practices, BRSU advocates for the following policy changes:
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
+                        <h3 class="font-bold text-green-700 mb-2">For the Government of Myanmar:</h3>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Restore full citizenship rights to the Rohingya population</li>
+                            <li>End discriminatory policies and practices targeting Rohingya</li>
+                            <li>Allow independent investigation of human rights violations</li>
+                            <li>Create conditions for safe and dignified return of refugees</li>
+                            <li>Ensure equal access to education for Rohingya students</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
+                        <h3 class="font-bold text-green-700 mb-2">For Host Countries:</h3>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Provide access to formal education for Rohingya children and youth</li>
+                            <li>Recognize and accredit prior learning and qualifications</li>
+                            <li>Allow Rohingya refugees to work and pursue higher education</li>
+                            <li>Ensure protection and basic rights for Rohingya refugees</li>
+                            <li>Include Rohingya representatives in decision-making processes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
+                        <h3 class="font-bold text-green-700 mb-2">For International Community:</h3>
+                        <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                            <li>Support international justice mechanisms for crimes against Rohingya</li>
+                            <li>Increase funding for education in humanitarian response</li>
+                            <li>Create more scholarship opportunities for Rohingya students</li>
+                            <li>Maintain pressure on Myanmar to address root causes of the crisis</li>
+                            <li>Support Rohingya-led initiatives and organizations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advocacy Campaigns -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Advocacy Campaigns</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <img src="img/Advocacy/Advocacy1.png" alt="Campaign Image" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">#EducationForAll Campaign</h3>
+                        <p class="text-gray-700 mb-4">
+                            Our #EducationForAll campaign advocates for Rohingya students' right to access quality education at all levels. Through social media activism, policy briefs, and direct engagement with education authorities, we're working to remove barriers to education for Rohingya youth.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Launched: January 2023</span>
+                            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <img src="img/Advocacy/Advocacy2.png" alt="Campaign Image" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">#JusticeForRohingya Initiative</h3>
+                        <p class="text-gray-700 mb-4">
+                            This campaign supports international justice mechanisms seeking accountability for crimes against Rohingya. We collect testimonies, raise awareness about ongoing legal processes, and advocate for comprehensive justice and reparations.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Launched: August 2022</span>
+                            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-green-700">#RohingyaVoices Media Project</h3>
+                    <p class="text-gray-700 mb-4">
+                        The #RohingyaVoices project trains Rohingya youth in digital storytelling, journalism, and media advocacy. Through this initiative, young Rohingya are documenting their community's experiences, challenging misrepresentations, and sharing authentic stories with global audiences.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                        <div class="h-48 bg-gray-200 rounded flex items-center justify-center">
+                            <img src="img/Advocacy/Advocacy3.png" alt="Campaign Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="h-48 bg-gray-200 rounded flex items-center justify-center">
+                            <img src="img/Advocacy/Advocacy4.png" alt="Campaign Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="h-48 bg-gray-200 rounded flex items-center justify-center">
+                            <img src="img/Advocacy/Advocacy5.png" alt="Campaign Image" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-4 text-right">
+                        <a href="#" class="text-green-600 font-medium hover:underline">View All Media Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advocacy Impact -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Advocacy Impact</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-bold mb-4 text-green-700">Success Stories</h3>
+                
+                <div class="space-y-6">
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">UN Human Rights Council Resolution</h4>
+                        <p class="text-gray-700">
+                            BRSU representatives provided testimony that contributed to a UN Human Rights Council resolution calling for accountability for crimes against Rohingya and improved conditions in Rakhine State.
+                        </p>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">Education Policy Change in Cox's Bazar</h4>
+                        <p class="text-gray-700">
+                            Our advocacy led to a policy change allowing Rohingya students to access educational facilities in Cox's Bazar, benefiting over 500 students in the first year of implementation.
+                        </p>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-bold text-gray-800 mb-1">Scholarship Program Expansion</h4>
+                        <p class="text-gray-700">
+                            Following our campaign, a major international foundation expanded its scholarship program to specifically include Rohingya students, creating 25 new higher education opportunities annually.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-green-700 mb-2">50+</div>
+                    <p class="text-gray-700">Policy meetings with decision-makers</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-green-700 mb-2">15</div>
+                    <p class="text-gray-700">Media appearances and interviews</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-green-700 mb-2">3,000+</div>
+                    <p class="text-gray-700">Signatures on our education petition</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Advocacy Resources -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Advocacy Resources</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Reports & Policy Briefs</h3>
+                    <ul class="space-y-3">
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">The State of Rohingya Education: Challenges and Opportunities</a>
+                            <p class="text-sm text-gray-600">Published: March 2023</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">Youth Perspectives on Return: Survey of Rohingya Youth</a>
+                            <p class="text-sm text-gray-600">Published: November 2022</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">Access to Higher Education for Refugees: Policy Recommendations</a>
+                            <p class="text-sm text-gray-600">Published: July 2022</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-green-600 hover:underline font-medium">Mental Health Among Rohingya Youth: Needs Assessment</a>
+                            <p class="text-sm text-gray-600">Published: February 2022</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Advocacy Toolkits</h3>
+                    <ul class="space-y-3">
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">Digital Advocacy Guide for Rohingya Youth</a>
+                            <p class="text-sm text-gray-600">Tools and strategies for effective online advocacy</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">Media Engagement Handbook</a>
+                            <p class="text-sm text-gray-600">Tips for engaging with journalists and media outlets</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-2">
+                            <a href="#" class="text-green-600 hover:underline font-medium">Public Speaking for Advocates</a>
+                            <p class="text-sm text-gray-600">Guide to effective public speaking and presentations</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-green-600 hover:underline font-medium">Community Mobilization Toolkit</a>
+                            <p class="text-sm text-gray-600">Strategies for organizing your community for change</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

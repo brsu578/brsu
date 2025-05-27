@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BRSU</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 w-full z-50">
+    <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="h-8 w-auto mr-2"
+                     onerror="this.src='https://via.placeholder.com/32x32?text=BRSU'; this.onerror=null;">
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">BRSU</h1>
+                    <p class="text-xs hidden md:block leading-tight">Bangladesh Rohingya Student Union</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation - Moved inline with logo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-green-200 text-sm">Home</a></li>
+                    <li><a href="about.html"
+                           class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">About</a></li>
+                    <li><a href="contact.html" class="hover:text-green-200 text-sm">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu (visible only on mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white text-xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white text-gray-800 rounded-lg shadow-lg p-2">
+            <a href="index.html" class="block py-1 text-sm hover:text-green-600">Home</a>
+            <a href="about.html"
+             class="bg-yellow-500 text-white px-2 py-1 rounded-full hover:bg-yellow-600 transition duration-300 font-bold text-sm">About</a>
+            <a href="contact.html" class="block py-1 text-sm hover:text-green-600">Contact</a>
+        </div>
+    </div>
+</header>
+
+<!-- Add this spacer div to prevent content from hiding behind the fixed header -->
+<div class="h-[60px]"></div>
+
+    <!-- Page Title -->
+    <div class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">About BRSU</h2>
+            <p class="text-lg mt-2">Learn about our organization, mission, and the team behind BRSU</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- About Section -->
+        <section class="mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Story</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    The Bangladesh Rohingya Student Union (BRSU) is a student-led movement committed to empowering Rohingya youth through education, advocacy, and unity. Founded by Rohingya students & youths from Myanmar in 20th June 2016, BRSU was born out of the urgent need to create a collective voice for Rohingya students who have been historically denied access to education, identity, and justice. 
+
+                    We stand as a united front of young Rohingya scholars, leaders, and activists working to challenge marginalization, promote academic excellence, and lead efforts for community empowerment. Our work includes educational support, leadership training, mental health awareness, cultural preservation, and international advocacy.
+
+                    At BRSU, we believe that our identity is our strength. Through solidarity, self-determination, and education, we are building a new generation of Rohingya youth who are confident, informed, and ready to lead the way toward a just and inclusive future for our people.
+                    We are not just students—we are advocates, bridge-builders, and the future of the Rohingya community..
+                    <br>
+
+                    <h3 class="text-2xl font-bold mb-4 text-green-700">Objective:</h3>
+
+                    To empower Rohingya students and youth through inclusive education, leadership development, mental health support, and cultural preservation while actively advocating for the rights and justice on both local and global platforms. We aim to foster a generation of changemakers by creating safe, youth-led spaces for learning, dialogue, and community service. Through strong partnerships with local, regional, and international organizations, we strive to amplify Rohingya voices, build solidarity, and contribute to a more just and peaceful future for our people in Rakhine.
+
+
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Today, BRSU serves hundreds of Rohingya students across Bangladesh, providing educational resources, 
+                    mentorship programs, scholarship information, and community events. Our work is guided by the belief 
+                    that education is a fundamental right and a powerful tool for positive change.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission and Vision -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Mission</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Our mission is to uplift Rohingya students and youth by expanding access to quality education, fostering leadership and civic engagement, promoting mental health and well-being, and preserving our cultural heritage. We are committed to grassroots organizing, global advocacy for a durable solution for genocide survivors, and community-driven action through meaningful partnerships—working to amplify Rohingya voices and create lasting impact for our people and future generations.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Our Vision</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    A world where Rohingya youth are educated, empowered, and leading positive change—free from discrimination, rooted in their identity, and equipped to build a just, peaceful, and inclusive society for all in Rakhine, Myanmar.
+                </p>
+            </div>
+        </section>
+
+        
+        <!-- Leadership Team -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Nurul Hoque -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                     <span class="text-gray-600 text-5xl"></span>
+                    <img src="img/logo-staff/Nurul.jpeg" alt="User Icon" class="w-full h-full rounded-full" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Nurul Hoque Ravvi</h3>
+                    <p class="text-gray-600 mb-3">President Executive Director</p>
+                    <p class="text-gray-700 text-sm">
+                        Studied Bachelor of Business Management at Cox'sbazar International University Bangladesh.
+                    </p>
+                </div>
+
+                    <!-- somuda -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Samuda Begum</h3>
+                    <p class="text-gray-600 mb-3">Vice President Head of Women winds</p>
+                    <p class="text-gray-700 text-sm">
+                        Community organizer studying English Literature at Cox'sbazar International University Bangladesh.
+                    </p>
+                </div>
+                 <!-- Shah Newaz -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Shah Newaz</h3>
+                    <p class="text-gray-600 mb-3">Vice President Youth coordinator</p>
+                </div>
+                
+                <!-- Moung Ziabul -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Moung Ziabul</h3>
+                    <p class="text-gray-600 mb-3">General Secretary Manager</p>
+                </div>
+                <!--Khaleda Begum -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Khaleda Begum</h3>
+                    <p class="text-gray-600 mb-3">Assistance General Secretary and Female Student coordinator. </p>
+                </div>
+                <!--Ziaur Rahman-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Ziaur Rahman</h3>
+                    <p class="text-gray-600 mb-3">Head of Blood Donation Unit</p>
+                </div>
+                <!--Hamid Hossain-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Hamid Hossain</h3>
+                    <p class="text-gray-600 mb-3">Camp-base blood Donation Group</p>
+                </div>
+                <!--Showkot Ara-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Showkot Ara</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Community Based learning Centre</p>
+                </div>
+                <!--Noor Hashim Rana-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Noor Hashim Rana</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Event and Program</p>
+                </div>
+                <!--Ruksaya Begum-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Ruksaya Begum</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Girls and Students</p>
+                </div>
+                <!-- Nurul Amin -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Nurul Amin</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Relief and Disaster.</p>
+                </div>
+                <!-- Noor Mohammed-->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Noor Mohammed</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Admin</p>
+                </div>
+                <!-- Kyi Kyi Win -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-gray-600 text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-green-700">Kyi Kyi Win</h3>
+                    <p class="text-gray-600 mb-3">Coordinator Women Group</p>
+                </div>
+
+            </div>
+            <div class="text-center mt-8">
+                <a href="contact.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Contact Our Team</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="img/logo-staff/logo.jpg" alt="BRSU Logo" class="w-20 h-auto mb-4">
+                    <h2 class="text-xl font-bold mb-4 mb-4">Bangladesh Rohingya Student Union(BRSU)</h2>
+                    <p>Empowering through education since 2016</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+                        <li><a href="education.html" class="hover:text-green-300">Education</a></li>
+                        <li><a href="advocacy.html" class="hover:text-green-300">Advocacy</a></li>
+                        <li><a href="social.html" class="hover:text-green-300">Social-Services</a></li>
+                        <li><a href="sports.html" class="hover:text-green-300">Sports</a></li>
+                        <li><a href="blood.html" class="hover:text-green-300">Free-blood donation</a></li>
+                        <li><a href="female.html" class="hover:text-green-300">We work for Women</a></li>
+                        <li><a href="livelihood.html" class="hover:text-green-300">Livelihood Activities</a></li>
+                        <li><a href="youth.html" class="hover:text-green-300">Youth-empowerment Program</a></li>
+                        <li><a href="contact.html" class="hover:text-green-300">Contact</a></li>
+                        <li><a href="donate.html" class="hover:text-green-300">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">Email: brsu578@gmail.com</p>
+                    <p class="mb-2">Phone: +1 503-765-4406</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1Dy5ynwFcW/?mibextid=wwXIfr" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://x.com/unionbangladesh?s=11" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-green-700 text-center">
+                <p>&copy; 2025 Bangladesh Rohingya Student Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
